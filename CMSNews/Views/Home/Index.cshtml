@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "جدید نیوز";
+}
+
+<h2 id="HomeH2">صفحه اصلی سایت من</h2>
+
+@Html.Action("ShowNewsGroup", "Newses", new { count = 5 })
+<div class=" row">
+   
+        <div class="col-md-5 ">
+            @Html.Action("LastNews", "Newses", new { co = 3 })
+            @Html.Action("BestNews", "Newses", new { co = 3 })
+        </div>
+        <div class="col-md-7 ">
+            @Html.Action("LastNews1", "Newses")
+        </div>
+   
+</div>
+

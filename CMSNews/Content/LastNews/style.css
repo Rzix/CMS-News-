@@ -1,0 +1,111 @@
+.lastCards {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+    width: 4rem;
+    position: relative;
+    right: 25rem;
+}
+
+.infoAndCard {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lastCards .red {
+    background-color: #f7506c;
+}
+
+.infos a {
+    color: #ffff;
+    transition: 0.5s;
+}
+
+    .infos a:hover {
+        text-decoration: none;
+        color:black;  
+    }
+
+.allCardElement {
+    display: flex;
+    width: 100%;
+}
+
+    .allCardElement .infos {
+        width: 100%;
+        position: relative;
+        top: 16px;
+    }
+
+.lastCards .lastCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 430px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.lastCard .lastImg {
+    border-radius: 0 10px 10px 0;
+    border-left: #ffffff solid 2px;
+    width: 4.2rem !important;
+    position: relative;
+}
+
+.lastCards .lastCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 430px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.seeAndMoreinfos {
+    border-right: #ffff solid 2px;
+    margin-right: 10px;
+    margin-top: 6px;
+    width: 50%;
+    font-size: 11px;
+}
+
+.lastCards .lastCard p.tip {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lastCards .lastCard p.second-text {
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* تعداد خطوطی که می‌خواهید نمایش داده شود */
+    -webkit-box-orient: vertical;
+    max-height: 40px; /* ارتفاع حداکثری برای نمایش */
+    text-align: center;
+}
+
+.lastCards .lastCard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+p {
+    margin-bottom: 5px !important;
+}
+
+.lastCards:hover > .infoAndCard:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}

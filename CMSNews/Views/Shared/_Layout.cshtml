@@ -1,0 +1,69 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/content/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link href="~/content/site.css" rel="stylesheet" />
+    @*Navbar*@
+
+
+    @*Last News*@
+    <link href="~/Content/LastNews/style.css" rel="stylesheet" />
+    @*category news*@
+    <link href="~/Content/effect hover/css/normalize.css" rel="stylesheet" />
+    <link href="~/Content/effect hover/css/Codilo.css" rel="stylesheet" />
+    <link href="~/Content/effect hover/css/style.css" rel="stylesheet" />
+    @*Last New*@
+    <link href="~/Content/Lastonenews/style.css" rel="stylesheet" />
+    @*Detail News*@
+    <link href="~/Content/nav/css/bootstrap.4.5.2.min.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/Codilo.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/default.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/nice-select.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/style.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/LineIcons.2.0.css" rel="stylesheet" />
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container body-content ">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Rzix</p>
+        </footer>
+    </div>
+
+
+    <script src="~/Content/effect hover/js/Codilo.js"></script>
+    <script src="~/Content/effect hover/js/jquery.js"></script>
+    <script src="~/Content/effect hover/js/script.js"></script>
+    <script src="~/Content/effect hover/js/splitting.min.js"></script>
+
+    @*Detail News*@
+    <script src="~/Content/nav/js/bootstrap.4.5.2.min.js"></script>
+    <script src="~/Content/nav/js/Codilo.js"></script>
+    <script src="~/Content/nav/js/main.js"></script>
+    <script src="~/Content/nav/js/jquery.nice-select.min.js"></script>
+    <script src="~/Content/nav/js/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/nav/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/nav/js/jquery.easing.min.js"></script>
+    <script src="~/Content/nav/js/modernizr-3.7.1.min.js"></script>
+    <script src="~/Content/nav/js/popper.min.js"></script>
+    <script src="~/Content/nav/js/scrolling-nav.js"></script>
+    <script src="~/Content/nav/js/waypoints.min.js"></script>
+    <script src="~/Content/nav/js/wow.min.js"></script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

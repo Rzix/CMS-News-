@@ -1,0 +1,30 @@
+﻿
+@model IEnumerable<CMSNews.Models.ViewModels.NewsGroupViewModel>
+
+<hr />
+<div class="text-center">
+    <h3>گروه خبر ها</h3>
+</div>
+<main id="main">
+    <div class="allCards">
+        <div class="col-12">
+            <div class="row ">
+                @foreach (var item in Model)
+                {
+                    <div class="card col-2" tabindex="0">
+                        <img src="~/images/news-group/@item.ImageName"
+                             alt="A City skyline at sunset" />
+                        <div class="text">
+                            <h2>@item.NewGroupTitle</h2>
+                        </div>
+                    </div>
+
+                }
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+

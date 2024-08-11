@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CMSNews.Models.ViewModels.NewsGroupViewModel>
+
+@{
+    ViewBag.Title = "صفحه اصلی دسته بندی ها";
+}
+
+
+<h2>نمایش لیست</h2>
+
+<p>
+    @Html.ActionLink("درج دسته جدید", "Create", null, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NewGroupTitle)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="~/images/news-group/@item.ImageName" alt="@item.ImageName" class="img60x60" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NewGroupTitle)
+            </td>
+
+            <td>
+                @Html.ActionLink("ویرایش", "Edit", new { id = item.NewGroupId }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("جزئیات", "Details", new { id = item.NewGroupId }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("حذف", "Delete", new { id = item.NewGroupId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

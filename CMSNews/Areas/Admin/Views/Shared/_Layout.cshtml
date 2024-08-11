@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/nav/css/nice-select.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/style.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/LineIcons.2.0.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/default.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/bootstrap.4.5.2.min.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/Codilo.css" rel="stylesheet" />
+    <link href="~/Content/nav/css/animate.css" rel="stylesheet" />
+
+
+
+
+    <script src="~/Scripts/ckeditor/ckeditor.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    @Html.Partial("_Navbar")
+    @RenderBody()
+    @*<div class="container body-content">
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <script src="~/Content/nav/js/wow.min.js"></script>
+    <script src="~/Content/nav/js/bootstrap.4.5.2.min.js"></script>
+    <script src="~/Content/nav/js/Codilo.js"></script>
+    <script src="~/Content/nav/js/jquery-1.12.4.min.js"></script>
+    <script src="~/Content/nav/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/nav/js/jquery.easing.min.js"></script>
+    <script src="~/Content/nav/js/jquery.nice-select.min.js"></script>
+    <script src="~/Content/nav/js/main.js"></script>
+    <script src="~/Content/nav/js/modernizr-3.7.1.min.js"></script>
+    <script src="~/Content/nav/js/popper.min.js"></script>
+    <script src="~/Content/nav/js/scrolling-nav.js"></script>
+    <script src="~/Content/nav/js/waypoints.min.js"></script>
+
+
+    <script src="~/Scripts/ckeditor/ckeditor.js"></script>
+    <script src="~/Scripts/ckeditor/adapters/jquery.js"></script>
+    <script>
+        $(function () {
+            $('#Description').ckeditor();
+        })
+    </script>
+</body>
+</html>

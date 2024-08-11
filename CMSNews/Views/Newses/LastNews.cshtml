@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CMSNews.Models.ViewModels.NewsViewModel>
+
+<hr />
+<div>
+    <div class="text-right" style="font-weight:bolder; font-size:2rem; margin:2rem 5rem">
+        آخرین اخبار
+    </div>
+</div>
+<div class="lastCards">
+    
+            @foreach (var item in Model)
+            {
+                <div class="infoAndCard">
+                    <div class="lastCard red">
+                        <div class="allCardElement">
+                            <div class="imgelement">
+                                <img src="~/images/news/@item.ImageName" alt="@item.NewsTitle" class="lastImg"/>
+                            </div>
+                            <div class="infos">
+                                <a href="#">
+                                    <p class="tip">@item.NewsTitle</p>
+                                </a>
+                            </div>
+                            <div class="seeAndMoreinfos">
+                                <p><b>تعداد بازدید :</b>  @item.See</p>
+                                <p><b>تعداد لایک :</b> @item.Like </p>
+                                <p><b>تاریخ:</b>@Html.DisplayFor(model=>item.RegisterDate)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+</div>

@@ -1,0 +1,27 @@
+﻿
+@font-face {
+    font-family: 'tabriz';
+    src: url('Fonts/tabriz.ttf') format('truetype');
+}
+#HomeH2 {
+    font-family: 'tabriz';
+    font-size: 2rem;
+    background-image: linear-gradient(45deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+}
+
+.img120x120 {
+    width: 120px;
+    height: 120px;
+}
+
+.img60x60 {
+    width: 60px;
+    height: 60px;
+}
+.wordChange {
+    word-break: break-word;
+    white-space: pre-line;
+}

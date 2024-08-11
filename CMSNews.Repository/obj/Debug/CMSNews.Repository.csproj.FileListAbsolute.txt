@@ -1,0 +1,15 @@
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Repository.dll.config
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Repository.dll
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Repository.pdb
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\EntityFramework.dll
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\EntityFramework.SqlServer.dll
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\EntityFramework.xml
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\EntityFramework.SqlServer.xml
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\obj\Debug\CMSNews.Repository.csproj.AssemblyReference.cache
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\obj\Debug\CMSNews.Repository.csproj.CoreCompileInputs.cache
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\obj\Debug\CMSNews.Repository.csproj.CopyComplete
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\obj\Debug\CMSNews.Repository.dll
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\obj\Debug\CMSNews.Repository.pdb
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Models.dll
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Models.pdb
+J:\more And more\CMSNews\CMSNews\CMSNews.Repository\bin\Debug\CMSNews.Models.dll.config

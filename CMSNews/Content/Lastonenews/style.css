@@ -1,0 +1,101 @@
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width: 465px) {
+    html {
+        font-size: 14px
+    }
+}
+
+.allLastOneCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.oneLastNews {
+    display: flex;
+    width: 39rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 10px 50px #fff12a;
+    flex-direction: column;
+    right: 2%;
+}
+
+.oneLastNews-img-holder {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+    .oneLastNews-img-holder img {
+        width: 79%;
+        margin: 0 auto;
+        height: auto;
+        max-height: 15rem;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+
+.blog-title {
+    color: #22215B;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.description {
+    padding: 1rem 0;
+    color: #22215B80;
+    font-size: 1rem;
+}
+
+.blog-time {
+    font-size: .8rem;
+    color: #22215B;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.LastOneNewContent {
+    width: 100%
+}
+
+.infoLastNew {
+    margin-top: 15rem;
+}
+
+.options span {
+    font-weight: 600;
+    color: black;
+    display: block;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-weight: 400;
+    background: #EEF7FE;
+    color: #22215B;
+    cursor: pointer;
+}
