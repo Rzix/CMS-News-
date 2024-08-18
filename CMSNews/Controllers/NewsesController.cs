@@ -64,5 +64,7 @@ namespace CMSNews.Controllers
             NewsViewModel newsViewModel= AutoMapperConfig.mapper.Map<News, NewsViewModel>(news);
             return View(newsViewModel);
         }
+
+
     }
 }
