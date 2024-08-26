@@ -61,10 +61,42 @@ namespace CMSNews.Controllers
             _newsService.Update(news);
             _newsService.Save();
 
-            NewsViewModel newsViewModel= AutoMapperConfig.mapper.Map<News, NewsViewModel>(news);
+            NewsViewModel newsViewModel = AutoMapperConfig.mapper.Map<News, NewsViewModel>(news);
             return View(newsViewModel);
         }
 
+        public ActionResult ShowLike(int newsId, bool state)
+        {
+            var news = _newsService.GetEntity(newsId);
+            NewsLikeViewModel newsLikeViewModel = new NewsLikeViewModel
+            {
+                NewsId = newsId,
+                Like = news.Like,
+                NewsState = state
+            };
+            return PartialView(newsLikeViewModel);
+        }
 
+        public ActionResult ChangeLikeState(int newsId, bool state)
+        {
+            var news = _newsService.GetEntity(newsId);
+            news.Like = (state) ? (news.Like - 1) : (news.Like + 1);
+            _newsService.Update(news);
+            _newsService.Save();
+            return RedirectToAction("ShowLike", new { newsId, state });
+        }
+
+
+
+        public ActionResult ShowNewsList(int? id)
+        {
+            var listNews = _newsService.GetAll().Where(t => t.IsActive).OrderByDescending(t => t.RegisterDate).ToList();
+            if (id != null)
+            {
+                listNews = listNews.Where(t => t.NewsGroupId == id).ToList();
+            }
+            List<NewsViewModel> lastNewsViewModels = AutoMapperConfig.mapper.Map<IEnumerable<News>, List<NewsViewModel>>(listNews);
+            return View(lastNewsViewModels);
+        }
     }
 }

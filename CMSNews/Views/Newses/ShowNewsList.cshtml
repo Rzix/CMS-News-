@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CMSNews.Models.ViewModels.NewsViewModel>
+@{
+    ViewBag.Title = "اخبار";
+}
+
+
+<section class="container">
+    <div class="page-header">
+        <h1>لورم ایپسوم<br>
+    </div>
+    <div class="row active-with-click">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>@item.NewsTitle</span>
+
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-responsive"
+                                 src="~/images/news/@item.ImageName">
+                        </div>
+                        <div class="mc-description">
+                            @Html.Raw(item.Description)
+                            <a href="/Newses/NewsDetailes/@item.NewsId">جزئیات بیشتر</a>
+                        </div>
+                    </div>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                </article>
+            </div>
+        }
+
+    </div>
+</section>

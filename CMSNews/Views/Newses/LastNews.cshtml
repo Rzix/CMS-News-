@@ -7,29 +7,31 @@
     </div>
 </div>
 <div class="lastCards">
-    
-            @foreach (var item in Model)
-            {
-                <div class="infoAndCard">
-                    <div class="lastCard red">
-                        <div class="allCardElement">
-                            <div class="imgelement">
-                                <img src="~/images/news/@item.ImageName" alt="@item.NewsTitle" class="lastImg"/>
-                            </div>
-                            <div class="infos">
-                                <a href="/Newses/NewsDetailes/@item.NewsId">
-                                    <p class="tip">@item.NewsTitle</p>
-                                </a>
-                            </div>
-                            <div class="seeAndMoreinfos">
-                                <p><b>تعداد بازدید :</b>  @item.See</p>
-                                <p><b>تعداد لایک :</b> @item.Like </p>
-                                <p><b>تاریخ:</b>@Html.DisplayFor(model=>item.RegisterDate)</p>
-                            </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="infoAndCard">
+            <div class="lastCard red">
+                <div class="allCardElement">
+                    <div class="imgelement">
+                        <img src="~/images/news/@item.ImageName" alt="@item.NewsTitle" class="lastImg" />
+                    </div>
+                    <div class="infos">
+                        <a href="/Newses/NewsDetailes/@item.NewsId">
+                            <p class="tip">@item.NewsTitle</p>
+                        </a>
+                    </div>
+                    <div class="seeAndMoreinfos">
+                        <p><b>تعداد بازدید :</b>  @item.See</p>
+                        <div style="display:flex; justify-content:center;">
+                            <p><b>تعداد لایک :</b> <p id="showLike_@item.NewsId">@Html.Action("ShowLike", "Newses", new { newsId = item.NewsId, state = true })</p> </p>
                         </div>
+                        <p><b>تاریخ:</b>@Html.DisplayFor(model => item.RegisterDate)</p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-            }
+    }
 
 </div>

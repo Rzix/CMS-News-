@@ -140,6 +140,17 @@
     <Content Include="Content\LastNews\index.html" />
     <Content Include="Content\LastNews\style.css" />
     <Content Include="Content\Lastonenews\style.css" />
+    <Content Include="Content\ListNews\assets\fonts\Estedad\ReadMe.txt" />
+    <Content Include="Content\ListNews\assets\fonts\Sahel\ReadMe.txt" />
+    <Content Include="Content\ListNews\assets\fonts\Shabnam\ReadMe.txt" />
+    <Content Include="Content\ListNews\assets\fonts\Vazir\ReadMe.txt" />
+    <Content Include="Content\ListNews\assets\fonts\Yekan\ReadMe.txt" />
+    <Content Include="Content\ListNews\assets\images\1.jpg" />
+    <Content Include="Content\ListNews\Codilo.css" />
+    <Content Include="Content\ListNews\css\bootstrap.css" />
+    <Content Include="Content\ListNews\css\style.css" />
+    <Content Include="Content\ListNews\js\jquery.js" />
+    <Content Include="Content\ListNews\js\script.js" />
     <Content Include="Content\nav\assets\fonts\Estedad\ReadMe.txt" />
     <Content Include="Content\nav\assets\fonts\Sahel\ReadMe.txt" />
     <Content Include="Content\nav\assets\fonts\Shabnam\ReadMe.txt" />
@@ -609,6 +620,19 @@
     <Content Include="Content\effect hover\assets\fonts\Vazir\Vazir-Light.woff" />
     <Content Include="Content\effect hover\assets\fonts\Vazir\Vazir-Regular.woff" />
     <Content Include="Content\effect hover\assets\fonts\Yekan\Yekan.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Estedad\Estedad-Bold.ttf" />
+    <Content Include="Content\ListNews\assets\fonts\Estedad\Estedad-Light.ttf" />
+    <Content Include="Content\ListNews\assets\fonts\Estedad\Estedad-Regular.ttf" />
+    <Content Include="Content\ListNews\assets\fonts\Sahel\Sahel-Bold.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Sahel\Sahel-Light.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Sahel\Sahel.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Shabnam\Shabnam-Bold.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Shabnam\Shabnam-Light.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Shabnam\Shabnam.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Vazir\Vazir-Bold.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Vazir\Vazir-Light.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Vazir\Vazir-Regular.woff" />
+    <Content Include="Content\ListNews\assets\fonts\Yekan\Yekan.woff" />
     <None Include="Scripts\jquery-3.0.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -708,6 +732,7 @@
     <Compile Include="Models\ViewModels\CommentViewModel.cs" />
     <Compile Include="Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Models\ViewModels\NewsGroupViewModel.cs" />
+    <Compile Include="Models\ViewModels\NewsLikeViewModel.cs" />
     <Compile Include="Models\ViewModels\NewsViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -739,6 +764,8 @@
     <Content Include="Views\Newses\LastNews1.cshtml" />
     <Content Include="Views\Account\LoginState.cshtml" />
     <Content Include="Views\Newses\NewsDetailes.cshtml" />
+    <Content Include="Views\Newses\ShowLike.cshtml" />
+    <Content Include="Views\Newses\ShowNewsList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
